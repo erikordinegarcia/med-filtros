@@ -545,19 +545,25 @@ img {
   overflow: hidden;
 }
 
+/* escurece a parte de baixo para o texto continuar legível */
 .about-box::before {
   content: '';
   position: absolute;
-  width: 70%;
-  aspect-ratio: 1;
-  border: 1px solid rgba(94, 160, 226, 0.35);
-  border-radius: 50%;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(5, 15, 32, 0.85) 0%, transparent 45%);
 }
 
-.about-box svg {
-  position: relative;
-  width: 46%;
-  color: var(--blue-light);
+.about-box img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-label {
+  z-index: 2;
 }
 
 .about-label {
@@ -575,6 +581,7 @@ img {
   position: absolute;
   right: -24px;
   bottom: 0;
+  z-index: 3;
   display: flex;
   align-items: center;
   gap: 12px;
