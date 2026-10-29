@@ -344,33 +344,6 @@ img {
 }
 
 @media (max-width: 760px) {
-  .hero {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 60px;
-  }
-
-  .hero-content {
-    height: auto;
-    padding-top: 120px;
-  }
-
-  .hero-watermark {
-    position: relative;
-    order: 2;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin-top: 30px;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 25%);
-    mask-image: linear-gradient(to bottom, transparent 0%, #000 25%);
-  }
-
-  .hero-overlay {
-    background: linear-gradient(to bottom, rgba(5, 15, 32, 0.6), rgba(5, 15, 32, 0.1));
-  }
-
   .area-badge {
     gap: 12px;
     padding: 12px 18px;
@@ -1250,16 +1223,55 @@ img {
   }
 
   .hero {
-    height: 640px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 90px;
+  }
+
+  .hero-content {
+    height: auto;
+    padding-top: 110px;
   }
 
   .hero h1 {
-    font-size: 40px;
-    letter-spacing: -1px;
+    font-size: 30px;
+    line-height: 1.05;
+    letter-spacing: -0.5px;
   }
 
   .hero-eyebrow {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .hero p {
+    margin: 18px 0;
+    font-size: 14px;
+  }
+
+  .hero p br {
+    display: none;
+  }
+
+  .hero-watermark {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% center;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  /* sombra por cima da imagem para o texto continuar legível */
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(5, 15, 32, 0.85) 0%,
+      rgba(5, 15, 32, 0.7) 60%,
+      rgba(5, 15, 32, 0.85) 100%
+    );
   }
 
   .hero-features-wrapper {
