@@ -808,16 +808,17 @@ img {
 
 .project-large {
   grid-row: span 2;
-  /* Troque por: url('assets/projeto-1.jpg') */
-  background-image: linear-gradient(135deg, #1f5aa6, #0a1a33);
+  background-image: url('assets/hospital.jpg');
+  background-position: 45% center;
 }
 
 .project-two {
-  background-image: linear-gradient(135deg, #3a7fd0, #12284a);
+  background-image: url('assets/clinica.jpg');
+  background-position: center 35%;
 }
 
 .project-three {
-  background-image: linear-gradient(135deg, #5ea0e2, #1f5aa6);
+  background-image: url('assets/laboratorio.jpg');
 }
 
 .project-art {
