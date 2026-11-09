@@ -813,12 +813,12 @@ img {
 }
 
 .project-two {
-  background-image: url('assets/clinica.jpg');
-  background-position: center 35%;
+  background-image: url('assets/equipamento.png');
+  background-position: 70% center;
 }
 
 .project-three {
-  background-image: url('assets/laboratorio.jpg');
+  background-image: url('assets/veterinaria.jpg');
 }
 
 .project-art {
